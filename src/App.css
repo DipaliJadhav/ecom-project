@@ -27,7 +27,10 @@
 .App-link {
   color: #61dafb;
 }
-
+.nav_nvabar_wrapper a {
+padding-left: 30px;
+color: #fff;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
