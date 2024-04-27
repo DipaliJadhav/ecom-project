@@ -6,20 +6,18 @@ import Login from './Login';
 import AddProduct from './AddProduct';
 import EditProduct from './EditProduct';
 import Register from './Register';
+import Protected from './Protected';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Header />
-      <h1>Ecom Project</h1>
-      <Routes>
+      <Routes>      
       <Route path="/login" element={<Login />} /> 
       <Route path="/register" element={<Register />} /> 
-      <Route path="/add" element={<AddProduct />} /> 
-      <Route path="/edit" element={<EditProduct />} /> 
-     
-      
+      <Route path="/add" element={<Protected Cm={AddProduct} />} /> 
+      <Route path="/edit" element={<Protected Cm={EditProduct} />} /> 
       </Routes>
       </BrowserRouter>
     </div>
